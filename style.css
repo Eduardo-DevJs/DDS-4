@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* utilidades */
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+
+/* padrao */
+
+ul {
+  list-style-type: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+/* header */
+.header-bg{
+  background: #223849;
+}
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.lista-nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.lista-nav li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* introducao */
+.introducao-bg{
+  background: #223849;
+}
+
+.introducao{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.textos{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.titulo{
+  font-size: 4rem;
+  color: #f9f9f9;
+}
+
+.descricao{
+  color: #f9f9f9;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#saiba-mais{
+  background: #E6BE30;
+  color: #223849;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+/* alunos */
+.alunos-bg{
+  background: #415768;
+}
+
+.lista-aluno{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.titulo-alunos{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #E6BE30;
+}
+
+.item-lista{
+  background-color: #223849;
+  border-radius: 4px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.foto{
+  color: #f9f9f9;
+  padding: 40px;
+  height: 200px;
+}
+
+.nome-aluno{
+  color: #f9f9f9;
+  font-size: 1.5rem;
+}
+
+.sobre-aluno{
+  color: #f9f9f9;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+/* fotos */
+#foto-1{
+  background: url(img/WhatsApp\ Image\ 2023-05-09\ at\ 19.38.58.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#foto-2{
+  background: url(img/WhatsApp\ Image\ 2023-05-09\ at\ 19.42.37.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#foto-3{
+  background: url(img/WhatsApp\ Image\ 2023-05-09\ at\ 19.44.13.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#foto-4{
+  background: url(img/WhatsApp\ Image\ 2023-05-09\ at\ 19.46.18.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#foto-5{
+  background: url(img/WhatsApp\ Image\ 2023-05-09\ at\ 19.48.44.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#foto-6{
+  background: url(img/WhatsApp\ Image\ 2023-05-09\ at\ 19.51.31.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media(max-width: 768px){
+  .header{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .lista-nav li{
+    background: #415768;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .introducao{
+    flex-direction: column;
+  }
+
+  .textos{
+    text-align: center;
+    gap: 40px;
+  }
+
+  #saiba-mais{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .titulo{
+    font-size: 3rem;
+  }
+  
+  .lista-aluno{
+    grid-template-columns: 1fr;
+  }
+}
